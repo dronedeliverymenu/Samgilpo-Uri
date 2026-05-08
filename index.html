@@ -297,9 +297,9 @@
     <button class="tab" onclick="showMain('food',this)">기타</button>
   </div>
   <div class="tabs-sub on" id="sub-bait">
-    <button class="tab on" onclick="showSub('bait',this,'bait')">미끼</button>
-    <button class="tab" onclick="showSub('fishing',this,'bait')">채비</button>
-    <button class="tab" onclick="showSub('dosirak',this,'bait')">도시락</button>
+    <button class="tab on" onclick="showSub('bait',this,'bait')">미끼·낚시용품</button>
+    <button class="tab" onclick="showSub('daebak',this,'bait')">대박카페</button>
+    <button class="tab" onclick="showSub('dosirak',this,'bait')">잡화</button>
   </div>
   <div class="tabs-sub" id="sub-cafe">
     <button class="tab on" onclick="showSub('bara',this,'cafe')">커피바라</button>
@@ -354,21 +354,6 @@
   <div class="item"><div class="item-info"><span class="item-name">불고기 냉면</span><span class="item-sub">물 / 비빔</span></div><div class="item-price">13,000원</div><button class="add-btn" onclick="addItemWithOption('불고기 냉면',13000)">+</button></div>
 </div>
 
-<!-- 낚시용품 -->
-<div id="fishing" class="section">
-  <div class="item"><div class="item-info"><span class="item-name">바늘</span></div><div class="item-price">2,000원</div><button class="add-btn" onclick="addItem('바늘',2000)">+</button></div>
-  <div class="item"><div class="item-info"><span class="item-name">봉돌</span></div><div class="item-price">2,000원</div><button class="add-btn" onclick="addItem('봉돌',2000)">+</button></div>
-</div>
-
-<!-- 도시락 -->
-<div id="dosirak" class="section">
-  <div style="text-align:center; padding: 3rem 1rem; color:#aaa;">
-    <div style="font-size:48px; margin-bottom:1rem;">🍱</div>
-    <p style="font-size:16px; font-weight:600; color:#555;">준비중입니다</p>
-    <p style="font-size:13px; margin-top:8px;">곧 서비스될 예정이에요</p>
-  </div>
-</div>
-
 <!-- 낚시 미끼 -->
 <div id="bait" class="section on">
   <div class="cat-label">낚시 미끼류 · 우리좌대</div>
@@ -382,10 +367,26 @@
   <div class="item"><div class="item-info"><span class="item-name">🐟 꽁치</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('꽁치',5000)">+</button></div>
   <div class="item"><div class="item-info"><span class="item-name">🐟 고등어</span></div><div class="item-price">8,000원</div><button class="add-btn" onclick="addItem('고등어',8000)">+</button></div>
   <div class="item"><div class="item-info"><span class="item-name">🦑 빨간오징어</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('빨간오징어',5000)">+</button></div>
-  <div class="item"><div class="item-info"><span class="item-name">🦑 흰오징어</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('흰오징어',5000)">+</button></div>
+  <div class="item"><div class="item-info"><span class="item-name">🦑 흰오징어</span></div><div class="item-price">4,000원</div><button class="add-btn" onclick="addItem('흰오징어',4000)">+</button></div>
   <div class="item"><div class="item-info"><span class="item-name">🦑 초록오징어</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('초록오징어',5000)">+</button></div>
   <div class="item"><div class="item-info"><span class="item-name">🦑 오징어내장</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('오징어내장',5000)">+</button></div>
   <div class="item"><div class="item-info"><span class="item-name">🐙 꼴뚜기</span></div><div class="item-price">5,000원</div><button class="add-btn" onclick="addItem('꼴뚜기',5000)">+</button></div>
+  <div class="cat-label">낚시용품</div>
+  <div class="item"><div class="item-info"><span class="item-name">바늘</span></div><div class="item-price">2,000원</div><button class="add-btn" onclick="addItem('바늘',2000)">+</button></div>
+  <div class="item"><div class="item-info"><span class="item-name">봉돌</span></div><div class="item-price">1,500원</div><button class="add-btn" onclick="addItem('봉돌',1500)">+</button></div>
+</div>
+
+<!-- 대박카페 -->
+<div id="daebak" class="section">
+  <div class="item"><div class="item-info"><span class="item-name">TOP캔</span><span class="item-sub">라떼 / 스위트아메리카노 / 블랙</span></div><div class="item-price">2,000원</div><button class="add-btn" onclick="addItemWithOption('TOP캔',2000)">+</button></div>
+  <div class="item"><div class="item-info"><span class="item-name">생수 500ml</span></div><div class="item-price">500원</div><button class="add-btn" onclick="addItem('생수 500ml',500)">+</button></div>
+  <div class="item"><div class="item-info"><span class="item-name">생수 2L</span></div><div class="item-price">1,200원</div><button class="add-btn" onclick="addItem('생수 2L',1200)">+</button></div>
+</div>
+
+<!-- 잡화 -->
+<div id="dosirak" class="section">
+  <div class="item"><div class="item-info"><span class="item-name">일회용 숟가락</span><span class="item-sub">10개입</span></div><div class="item-price">1,000원</div><button class="add-btn" onclick="addItem('일회용 숟가락 10개입',1000)">+</button></div>
+  <div class="item"><div class="item-info"><span class="item-name">면장갑</span><span class="item-sub">12켤레</span></div><div class="item-price">4,000원</div><button class="add-btn" onclick="addItem('면장갑 12켤레',4000)">+</button></div>
 </div>
 
 <!-- 하단 장바구니 바 -->
@@ -410,7 +411,7 @@ const iriMenuNames = ['아메리카노(이리)','카페라떼(이리)','바닐�
 const foodMenuNames = ['짜장','간짜장','고추짜장','삼선짜장','짬뽕','굴짬뽕','매운짬뽕','해물짬뽕','백짬뽕','우동','삼선우동','울면','짜장밥','짬뽕밥','굴탕밥','해물짬뽕밥','양송이덮밥','대호특밥','고추잡채밥','잡탕밥','유산슬밥','육개장','갈비탕','볶음밥','새우볶음밥','삼선볶음밥','오므라이스','잡채밥','마파두부밥','오징어덮밥','제육덮밥','탕수육','깐풍기','라조기','깐풍육','라조육','깐쇼새우','깐풍새우','양장피','팔보채','고추잡채','유산슬','해물누룽지탕','술국','군만두','물만두'];
 const iganeMenuNames = ['이가네 갈비탕','불고기 냉면'];
 
-const baitMenuNames = ['생새우 20마리','밑밥새우','각크릴','냉동새우','갯지렁이','멸치','냉동빙어','꽁치','고등어','빨간오징어','흰오징어','초록오징어','오징어내장','꼴뚜기','바늘','봉돌'];
+const baitMenuNames = ['생새우 20마리','밑밥새우','각크릴','냉동새우','갯지렁이','멸치','냉동빙어','꽁치','고등어','빨간오징어','흰오징어','초록오징어','오징어내장','꼴뚜기','바늘','봉돌','생수 2L','생수 500ml','TOP캔'];
 
 function getItemStore(name) {
   const base = name.replace(/ 🔴| 🔵/g, '');
@@ -467,6 +468,7 @@ const menuOptions = {
   '라떼': ['초코', '쑥', '밤'],
   '에이드(카페이리)': ['자몽', '레몬'],
   '불고기 냉면': ['물', '비빔'],
+  'TOP캔': ['라떼', '스위트아메리카노', '블랙'],
 };
 // 온도 선택도 필요한 메뉴 (옵션 + 온도)
 const menuNeedsTemp = ['라떼'];
